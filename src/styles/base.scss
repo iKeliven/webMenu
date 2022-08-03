@@ -1,0 +1,121 @@
+@import '_variables.scss';
+
+
+/* Reset CSS */
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links and List*/
+a{
+    text-decoration: none;
+    color: $black;
+}
+
+ul, li{
+    list-style: none;
+}
+
+/* Tipography */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+h1{
+    font-size: 22px;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 16px;
+}
+h3{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+small{
+    color: $grey;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.big-title{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0px;
+    text-transform: uppercase;
+}
+
+.title{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.modal-title{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 5px 0px 0px;
+}
+
+/* General */
+.App {
+    display: flex;
+    justify-content: center;
+    background-color: $softGray;
+}
+
+main{
+    width: 80%;
+}
+
+label{
+    font-size: 12px;
+}
+
+/* Border*/
+.bbottom{
+    border-bottom: 1px solid $lightGrey;
+}
+
+.bRadiusImg{
+    border-radius: 10px 0px 0px 10px;
+}
+.bRadius{
+    border-radius: 10px;
+}
+
+/* Display Flex*/
+
+.web-menu--body--space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.web-menu--body--space-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.web-menu--body--column {
+    display: flex;
+    flex-direction: column;
+}
+
+.web-menu--body--column--space-around{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.web-menu--body--flex-end{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Scroll */
+
+.modalScrollY{
+    overflow-y: scroll;
+}

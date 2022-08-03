@@ -1,0 +1,306 @@
+@import '_variables.scss';
+@import 'base.scss';
+
+
+/* Navbar */
+.navbar {
+    height: 40px;
+}
+
+.navbar a{
+    color: $black;
+    font-weight: bold;
+}
+
+.navbar a:hover{
+    color: $red;
+    cursor: pointer;
+}
+
+.navbar a::after{
+    color: $red;
+}
+
+/* Header */
+.header--banner{
+    background-image: url("../images/banner.jpg");
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.header--details{
+    width: calc(100% - 230px);
+    padding-bottom: 15px;
+    padding-right: 30px;
+}
+.header--brand{
+    display: flex;
+}
+.logo{
+    border: 5px solid $softGray;
+    margin-left: 50px;
+    margin-top: -60px;
+    width: 120px;
+    height: 120px;
+    
+}
+
+.header--right{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.brand-details a{
+    color: $red;
+    font-weight: bold;
+}
+.brand-details .min-order{
+    margin-left: 10px;
+}
+
+/* Status */
+.status{
+    padding: 15px 15px;
+    background-color: $lightGreen;
+    border-radius: 30px;
+    width: 130px;
+}
+
+.status small{
+    color: $green;
+    font-weight: bold;
+}
+
+/* ButtonAddress */
+.button-address{
+    padding: 10px 15px;
+    width: 200px;
+    background-color: $white;
+}
+.button-address small{
+    color: $black
+}
+
+/* Menu */
+/* TopHated */
+/* ProductMenu */
+
+.menu--header{
+    margin: 10px 50px;
+}
+
+.top-hated{
+    padding: 5px;
+    background-color: $white;
+    display: flex;
+    gap: 5px;
+}
+.product-menu{
+    padding: 10px;
+    background-color: $white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.top-hated a{
+    min-width: 40%;
+}
+
+.product-menu a{
+    width: 32%;
+}
+
+/* Menu Item */
+.menu-item{
+    width: 100%;
+    display: flex;
+    background: $white;
+}
+
+.product-menu .menu-item--img img{
+    width: 90px;
+    height: 90px;
+}
+
+.top-hated .menu-item--img img{
+    width: 120px;
+    height: 120px;
+}
+.menu-item--details{
+    margin-left: 10px;
+}
+
+/* Modal */
+.modal{
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+    background-color: $white;
+    border: 1px solid $lightGrey;
+    display: flex;
+    box-shadow: 0 0 1em $grey;
+}
+/* Modal Address */
+.modal--address {
+    width: 600px;
+    height: 600px;
+}
+
+/* Modal Product */
+.modal--product {
+    width: 750px;
+    height: 400px;
+}
+
+.modal--product--img img{
+    width: 400px;
+    height: 400px;
+    margin: 0;
+}
+.modal--product--contain{
+    width: 300px;
+    margin-left: 15px;
+}
+.modal--product--contain article{
+    height: 300px;
+}
+.modal--product--contain footer{
+    position: fixed;
+    bottom: 14%;
+    width: 300px;
+    background-color: $white;
+    height: 70px;
+}
+
+/* ProductDescription*/
+.product-description{
+    margin-bottom: 10px;
+}
+
+.product-description small{
+    margin: 5px 0px;
+}
+
+/* CloseModal */
+a.closeModal {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* SearchArea */
+.search-area{
+    background-color: $white;
+    border-radius: 25px;
+    border: 1px solid $grey;
+    padding: 10px 15px;
+    width: 250px;
+}
+
+.search-area input, button{
+    border: 0px;
+    background-color: transparent;
+}
+
+/* MenuHeader */
+.menu-header{
+    margin: 15px 50px;
+}
+
+/* Filter */
+.filter{
+    font-weight: bold;
+    width: 50px;
+}
+
+/* DropdownMenu*/
+
+.dropdown-menu a{
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: $white;
+    padding: 10px 15px;
+}
+.dropdown{
+    position: relative;
+    left: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .15);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out; 
+}
+
+.dropdown > a:focus + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Button */
+.btn-back {
+    border: 2px solid $red;
+    color: $red;
+    padding: 10px 15px;;
+}
+.btn-next {
+    border: none;
+    background-color: $red;
+    color: $white;
+    padding: 10px 15px;;
+}
+
+/* Button Add */
+.button-add{
+    background-color: $red;
+    width: 200px;
+    padding: 10px 15px;
+    color: $white;
+}
+
+/* Button Sum */
+.button-sum{
+    border: 1px solid $lightGrey;;
+    width: 60px;
+    padding: 10px 15px;
+}
+
+/* Mandatory */
+.mandatory{
+    color: $grey;
+    background-color: $lightGrey;
+    padding: 5px 10px;
+    font-size: 8px;
+}
+
+/* Checkbox Radio */
+.product-input{
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.product-input input{
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border: solid $lightGrey;
+    border-width: 2px;
+}
+.product-input input:checked{
+    background-color: $red;
+}
